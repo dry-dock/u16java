@@ -97,7 +97,7 @@ wget http://www-eu.apache.org/dist/maven/maven-3/$APACHE_MAVEN/binaries/apache-m
 tar xzf apache-maven-$APACHE_MAVEN-bin.tar.gz -C /usr/local && rm -f apache-maven-$APACHE_MAVEN-bin.tar.gz
 ln -fs /usr/local/apache-maven-$APACHE_MAVEN/bin/mvn /usr/bin
 echo 'export PATH=$PATH:/usr/local/apache-maven-$APACHE_MAVEN/bin' >> /etc/drydock/.env
-echo 'M2_HOME=/usr/local/apache-maven-$APACHE_MAVEN/' >> /etc/drydock/.env
+echo 'export M2_HOME=/usr/local/apache-maven-$APACHE_MAVEN/' >> /etc/drydock/.env
 
 APACHE_ANT=1.10.6
 echo "================ Installing apache-ant $APACHE_ANT ================="
